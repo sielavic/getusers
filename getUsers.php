@@ -1,4 +1,5 @@
- public function getTasksAllUsersAnd($post, $load, $calcCount = false, $and = null){
+<?php
+public function getTasksAllUsersAnd($post, $load, $calcCount = false, $and = null){
         if (isset($_COOKIE['current_filtergroup_id'])) {
             $filtergroup = \Entity\Filtergroup::find($_COOKIE['current_filtergroup_id']);
         }
